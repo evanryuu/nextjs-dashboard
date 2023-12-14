@@ -5,6 +5,8 @@
 @layer base {
   :root {
     --ac-theme-color: #ffffff;
+    --blue-400: #4489f6;
+    --blue-500: #0070f3;
   }
 }
 

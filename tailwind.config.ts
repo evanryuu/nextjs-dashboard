@@ -14,9 +14,8 @@ const config: Config = {
       colors: {
         theme: 'var(--ac-theme-color)',
         blue: {
-          400: '#2589FE',
-          500: '#0070F3',
-          600: '#2F6FEB',
+          400: 'var(--blue-400)',
+          500: 'var(--blue-500)',
         },
       },
     },
@@ -28,7 +27,7 @@ const config: Config = {
       },
     },
   },
-  darkMode: 'media',
+  darkMode: ['class', '[data-mode="dark"]'],
   plugins: [require('@tailwindcss/forms')],
 };
 export default config;
