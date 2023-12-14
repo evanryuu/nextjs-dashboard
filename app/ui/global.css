@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --ac-theme-color: #ffffff;
+  }
+}
+
+@layer utilities {
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ac-theme-color: #333333;
+    }
+  }
+}
+
+
 input[type='number'] {
   -moz-appearance: textfield;
   appearance: textfield;
